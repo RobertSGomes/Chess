@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background: #333;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: contain;
+    background-position: center;
+}
+
+#board {
+    background-image: url("./assets/board.png");
+
+    position: relative;
+    z-index: 1;
+}
+
+.dot::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.highlight::before {
+    content: "";
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+
+    position: absolute;
+    z-index: -1;
+
+    background: rgba(255, 255, 0, 0.5);
+}
+
+.capture::before {
+    content: "";
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+
+    border: 7.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.rookrght::before {
+    content: "";
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+
+    border: 7.5px solid red;
+    border-radius: 50%;
+}
+
+.br {
+    background-image: url("./assets/br.png");
+}
+
+.bn {
+    background-image: url("./assets/bn.png");
+}
+
+.bb {
+    background-image: url("./assets/bb.png");
+}
+
+.bq {
+    background-image: url("./assets/bq.png");
+}
+
+.bk {
+    background-image: url("./assets/bk.png");
+}
+
+.bp {
+    background-image: url("./assets/bp.png");
+}
+
+.wr {
+    background-image: url("./assets/wr.png");
+}
+
+.wn {
+    background-image: url("./assets/wn.png");
+}
+
+.wb {
+    background-image: url("./assets/wb.png");
+}
+
+.wq {
+    background-image: url("./assets/wq.png");
+}
+
+.wk {
+    background-image: url("./assets/wk.png");
+}
+
+.wp {
+    background-image: url("./assets/wp.png");
+}

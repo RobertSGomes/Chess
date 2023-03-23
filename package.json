@@ -1,0 +1,8 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "Tabuleiro de xadrez funcional",
+  "main": "index.js",
+  "author": "Robert da Silva Gomes",
+  "license": "ISC"
+}
